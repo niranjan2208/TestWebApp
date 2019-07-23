@@ -1,13 +1,15 @@
 
+Ext.onReady(function() {
+
 var myform = new Ext.form.FormPanel({
 width:400,
 height:250,
 renderTo:document.body,
 items:[{
 xtype: 'textfield'
-,fieldlabel: 'UserName'
+,fieldlabel: 'User Name'
 ,inputTpe: 'password'
-,width: 150
+,width: 150`````
 ,id: 'txtuserName'
 ,allowBlank:false
 ,minLength:3
@@ -24,3 +26,6 @@ xtype: 'textfield'
 }]
 
 });
+
+)}
+
