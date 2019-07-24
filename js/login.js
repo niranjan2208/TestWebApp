@@ -7,7 +7,7 @@ Ext.onReady(function() {
 
 var myform = new Ext.FormPanel({
 
-width:800,
+width:500,
 height:250,
 
 defaultType:'textfield',
@@ -15,7 +15,11 @@ items:[
 
 {
  xtype: 'radiogroup',
-fieldLabel: 'Login As:',
+fieldLabel: 'Login As',
+ defaults: { 
+            labelWidth: 250,
+            margin: '5 5 5 5 '
+         },
 items:[
          {
             xtype: 'radiofield',
@@ -60,7 +64,7 @@ xtype: 'textfield'
 });
 
 var panel = new Ext.Panel({
-width:800,
+width:500,
 height:250,
 layout:'border',
 renderTo:document.body,
