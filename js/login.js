@@ -6,10 +6,39 @@ Ext.onReady(function() {
 
 
 var myform = new Ext.FormPanel({
-width:800,
+
+width:500,
 height:250,
+
 defaultType:'textfield',
-items:[{
+items:[
+
+{
+ xtype: 'radiogroup',
+fieldLabel: 'Login As',
+ defaults: { 
+            labelWidth: 250,
+            margin: '5 5 5 5 '
+         },
+items:[
+         {
+            xtype: 'radiofield',
+            boxLabel: 'Staff',
+            name: 'framework',
+            checked: false,
+            inputValue: 'Staff'
+          },
+          
+        {
+            xtype: 'radiofield',
+            boxLabel: 'Student',
+            name: 'framework',
+            checked: false,
+            inputValue: 'Student'
+          }
+       ]
+ },                
+{
 xtype: 'textfield'
 ,fieldLabel: 'User Name'
 ,inputTpe: 'password'
@@ -29,22 +58,25 @@ xtype: 'textfield'
 ,blankText:'Password Field is Mandatory'
 ,minLength:3
 ,maxLength: 30
+
 }]
 
 });
 
 var panel = new Ext.Panel({
-width:800,
+width:500,
 height:250,
+layout:'border',
 renderTo:document.body,
+ border: 1,
+    style: {borderColor:'#00000', borderStyle:'solid', borderWidth:'5px'},
 buttonAlign: 'center',
-buttons:[{text:'Login'},{text:'Reset'}],
+buttons:[{text:'Sign In'},{text:'Register'}],
 title: 'Welcome to ONE NETWORK',
 frame:true,
 layout : 'form',
 items : [myform]
 });
-
 
 })
 
