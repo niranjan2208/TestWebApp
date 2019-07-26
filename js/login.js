@@ -4,7 +4,6 @@ Ext.form.Field.prototype.msgTarget ='side';
 
 Ext.onReady(function() {
 
-
 var myform = new Ext.FormPanel({
 
 width:500,
@@ -71,7 +70,8 @@ renderTo:document.body,
  border: 1,
     style: {borderColor:'#00000', borderStyle:'solid', borderWidth:'5px'},
 buttonAlign: 'center',
-buttons:[{text:'Sign In'},{text:'Register'}],
+buttons:[{text:'Login'},{text:'Register'}],
+
 title: 'Welcome to ONE NETWORK',
 frame:true,
 layout : 'form',
