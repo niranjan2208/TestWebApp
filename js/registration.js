@@ -84,8 +84,8 @@ height:300,
 layout:'border',
 renderTo:document.body,
  border: 1,
-    style: {borderColor:'#000000', borderStyle:'solid', borderWidth:'5px'}, 
-               
+    style: {borderColor:'#000000', borderStyle:'solid', borderWidth:'1px', margin:'10px' }, 
+          
     buttonAlign: 'center',
     buttons:[{text:'Submit'}],
                
