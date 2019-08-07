@@ -1,0 +1,32 @@
+{
+  "name": "testwebapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "backEnd.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "nconf": "^0.10.0",
+    "node-extjs4": "^0.1.1",
+    "nodemon": "^1.19.1",
+    "pug": "^2.0.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niranjan2208/TestWebApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/niranjan2208/TestWebApp/issues"
+  },
+  "homepage": "https://github.com/niranjan2208/TestWebApp#readme"
+}

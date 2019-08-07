@@ -9,8 +9,12 @@ var myform = new Ext.FormPanel({
 
 width:500,
 height:250,
+xtype:'formpanel',
+id:'myForm',
 
 defaultType:'textfield',
+method:'POST',
+url:'backEnd',
 items:[
 
 {
@@ -41,7 +45,6 @@ items:[
 {
 xtype: 'textfield'
 ,fieldLabel: 'User Name'
-,inputTpe: 'password'
 ,width: 250
 ,id: 'txtuserName'
 ,allowBlank:false
@@ -52,7 +55,7 @@ xtype: 'textfield'
 xtype: 'textfield'
 ,fieldLabel: 'Password'
 ,id:'txtPassword'
-,inputTpe: 'password'
+,inputType: 'password'
 ,width: 250
 ,allowBlank:false
 ,blankText:'Password Field is Mandatory'
@@ -71,12 +74,37 @@ renderTo:document.body,
  border: 1,
     style: {borderColor:'#00000', borderStyle:'solid', borderWidth:'5px'},
 buttonAlign: 'center',
-buttons:[{text:'Sign In'},{text:'Register'}],
+buttons:[{text:'Sign In',
+//type:'submit',
+listeners: {
+        click: function() {
+            
+        	var value1 = Ext.ComponentQuery.query('textfield[id=txtuserName]')[0].getValue();
+        	var value2 = Ext.ComponentQuery.query('textfield[id=txtPassword]')[0].getValue();
+    if (myform.isValid()) {
+        myform.submit({
+        	
+      		url:'backEnd',  // your url
+            params: {id:value1,pwd:value2}, // needed for additional params
+            submitEmptyText: false,  // don't post empty text in fields
+            success: function(myform, action) {
+               Ext.Msg.alert('Success', "Login successful");
+            	window.location = 'registration';    				
+            },
+            failure: function(myform, action) {
+                Ext.Msg.alert('Failed', "Login failed");
+            }
+        });     	
+        }      
+}
+}
+},
+{text:'Register'}],
 title: 'Welcome to ONE NETWORK',
 frame:true,
 layout : 'form',
 items : [myform]
-});
+}).show();
 
-})
+});
 
