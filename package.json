@@ -9,6 +9,7 @@
   "dependencies": {
     "ejs": "^2.6.2",
     "express": "^4.17.1",
+    "jquery": "^3.4.1",
     "nconf": "^0.10.0",
     "node-extjs4": "^0.1.1",
     "nodemon": "^1.19.1",

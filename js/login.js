@@ -87,13 +87,13 @@ listeners: {
       		url:'backEnd',  // your url
             params: {id:value1,pwd:value2}, // needed for additional params
             submitEmptyText: false,  // don't post empty text in fields
-            success: function(myform, action) {
-               Ext.Msg.alert('Success', "Login successful");
-            	window.location = 'registration';    				
-            },
-            failure: function(myform, action) {
-                Ext.Msg.alert('Failed', "Login failed");
-            }
+//            success: function(myform, action) {
+//               Ext.Msg.alert('Success', "Login successful");
+////            	window.location = 'registration';    				
+//            },
+//            failure: function(myform, action) {
+//                Ext.Msg.alert('Failed', "Login failed");
+//            }
         });     	
         }      
 }

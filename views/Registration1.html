@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Login V19</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/Linearicons-Free-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/util.css">
+	<link rel="stylesheet" type="text/css" href="/main.css">
+<!--===============================================================================================-->
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font: 16px Arial;  
+}
+
+/*the container must be positioned relative:*/
+.autocomplete {
+  position: relative;
+  display: inline-block;
+}
+
+
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff; 
+  border-bottom: 1px solid #d4d4d4; 
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+  background-color: #e9e9e9; 
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+  background-color: DodgerBlue !important; 
+  color: #ffffff; 
+}
+</style>
+
+</head>
+<body>
+
+
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-50">
+				<form autocomplete="off" class="login100-form validate-form" action="backEnd" method="post">
+					<input autocomplete="false" name="hidden" type="text" style="display:none;">
+					<span class="login100-form-title p-b-33">
+						User Registration
+					</span>
+					
+					
+					<div class="wrap-input100">
+						<input class="input100" id="name" type="text" name="name" placeholder="Name">
+						<span class="focus-input100-1"></span>
+						<span class="focus-input100-2"></span>
+					</div>	
+					
+					<div class="wrap-input100 rs1 validate-input">
+						<input class="input100" id="dob" type="date" name="dob" placeholder="Date Of Birth">
+						<span class="focus-input100-1"></span>
+						<span class="focus-input100-2"></span>
+						
+					</div>
+				
+					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+						<input class="input100" id="email" type="text" name="email" placeholder="Email">
+						<span class="focus-input100-1"></span>
+						<span class="focus-input100-2"></span>
+					</div>
+					
+					
+					<div class="wrap-input100">
+						<input class="input100" id="addr1" type="text" name="address" placeholder="Address Line 1">
+						<span class="focus-input100-1"></span>
+						<span class="focus-input100-2"></span>
+					</div>
+				
+					<div class="wrap-input100">
+						<input class="input100" id="addr2" type="text" name="address" placeholder="Address Line 2">
+						<span class="focus-input100-1"></span>
+						<span class="focus-input100-2"></span>
+					</div>
+				
+					<div class="wrap-input100">
+						<input class="input100" id="course" type="text" name="course" placeholder="Course">
+                		<span class="focus-input100-1"></span>
+						<span class="focus-input100-2"></span>
+					</div>
+					
+					<div class="wrap-input100">
+					<select onchange="print_city('state', this.selectedIndex);" id="sts" name ="stt" class="form-control" required></select>
+					<span class="focus-input100-1"></span>
+						<span class="focus-input100-2"></span>
+					</div>
+					
+					<div class="wrap-input100">
+					<select id ="state" class="form-control" required></select>
+					<span class="focus-input100-1"></span>
+						<span class="focus-input100-2"></span>
+					</div>
+					
+					<div class="container-login100-form-btn m-t-20">
+						<button class="login100-form-btn" type="submit">
+							Submit
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	
+	</div>
+
+	<iframe src="/frameRender" method="post" style="width:100%; height:100%;position:relative; bottom: 600px; left: 1000px;width: 25%; height: 100%;border:2px solid red;"></iframe>
+	
+<!--===============================================================================================-->
+	<script src="/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="/bootstrap/js/popper.js"></script>
+	<script src="/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="/daterangepicker/moment.min.js"></script>
+	<script src="/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="/main.js"></script>
+	<script src="/autocomplete.js"></script>
+	<script src="/cities.js"></script>
+	<script>
+	var el = document.getElementById('course');
+	if(el)
+	{
+	autocomplete(el);
+	}
+	print_state("sts");
+</script>
+
+</body>
+</html>
