@@ -211,6 +211,12 @@ input.input100 {
   padding: 0 25px 0 25px;
 }
 
+input.input100-radio {
+  padding: 0 1000px 0 1000px;
+  margin-left: 25px;
+
+}
+
 /*------------------------------------------------------------------
 [ Focus Input ]*/
 
@@ -415,6 +421,5 @@ input.input100 {
     opacity: 1;
   }
 }
-
 
 
