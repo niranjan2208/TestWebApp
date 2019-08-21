@@ -10,9 +10,12 @@
     "ejs": "^2.6.2",
     "express": "^4.17.1",
     "jquery": "^3.4.1",
+    "jsdom": "^15.1.1",
+    "jsonfile": "^5.0.0",
     "nconf": "^0.10.0",
     "node-extjs4": "^0.1.1",
     "nodemon": "^1.19.1",
+    "popups": "^1.1.3",
     "pug": "^2.0.4"
   },
   "devDependencies": {},
