@@ -74,12 +74,7 @@ app.post('/register',function(req,res){
         json.push({ Name: name , DateOfBirth: dob, EmailID: email_id, AddressLine1:addr1, AddressLine2:addr2, Course:course, State:state, City:city });
         
         jsonfile.writeFileSync(file, json, {spaces:2});
-        
-//        if(err)
-//        {
-//        	console.log("Error submitting data");
-//        }
-        
+              
         {
         	res.sendFile(__dirname+"\\views\\Summary.html");
         }
@@ -91,11 +86,4 @@ app.get('/registration',function (req, res) {
 		res.sendFile(__dirname+"\\views\\Registration1.html");
 	});
 
-var server = app.listen(9090, function () {
-
-    var host = server.address().address
-    var port = server.address().port
-
-    console.log('Example app listening at http://%s:%s', host, port)
-
-  })
+var server = app.listen(9090);

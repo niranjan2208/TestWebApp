@@ -118,5 +118,25 @@
     "Course": "Hotel Management",
     "State": "Assam",
     "City": " Abhayapuri "
+  },
+  {
+    "Name": "Vinod",
+    "DateOfBirth": "1993-02-04",
+    "EmailID": "vreddy@onenetwork.com",
+    "AddressLine1": "",
+    "AddressLine2": "",
+    "Course": "",
+    "State": "Maharashtra",
+    "City": " Pune "
+  },
+  {
+    "Name": "Test",
+    "DateOfBirth": "2019-08-14",
+    "EmailID": "test@gmail.com",
+    "AddressLine1": "line1",
+    "AddressLine2": "line2",
+    "Course": "Management",
+    "State": "Lakshadweep",
+    "City": " North Island "
   }
 ]
