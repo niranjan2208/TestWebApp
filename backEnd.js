@@ -33,10 +33,8 @@ app.set('view engine', 'html');
  
   app.get('/frameRender',function(req,res)
  {
- if(authenticated===true)
+
  res.sendFile(__dirname+"\\views\\frameRender.html");
- else
- return res.redirect('/');
  }
  );
  
