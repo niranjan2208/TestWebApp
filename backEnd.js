@@ -38,6 +38,13 @@ app.set('view engine', 'html');
  }
  );
  
+   app.get('/collegeModalPopup',function(req,res)
+ {
+
+ res.sendFile(__dirname+"\\views\\collegeModalPopup.html");
+ }
+ );
+ 
  app.post('/login',function(req,res){
   var user_name=req.body.email;
   var passwd=req.body.pass;
@@ -69,7 +76,7 @@ app.post('/register',function(req,res){
 
   //start writing
 		
-        json.push({ Name: name , DateOfBirth: dob, EmailID: email_id, AddressLine1:addr1, AddressLine2:addr2, Course:course, State:state, City:city });
+        json.push({ Name: name, DateOfBirth: dob, EmailID: email_id, AddressLine1:addr1, AddressLine2:addr2, Course:course, State:state, City:city});
         
         jsonfile.writeFileSync(file, json, {spaces:2});
               

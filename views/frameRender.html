@@ -25,6 +25,8 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="/util.css">
 	<link rel="stylesheet" type="text/css" href="/main.css">
+	<link rel="stylesheet" type="text/css" href="/modal.css">
+	<link rel="stylesheet" type="text/css" href="/loadingMask.css">
 <!--===============================================================================================-->
 <style>
 * {
@@ -78,7 +80,15 @@ body {
 
 </head>
 <body>
-
+<div class="loading-mask" style="opacity:0.8;
+    background-color:#ccc;
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    z-index:1000;">  
+</div>
 
 	<div class="limiter">
 		<div class="container-login100">
@@ -121,6 +131,7 @@ body {
 						<span class="focus-input100-1"></span>
 						<span class="focus-input100-2"></span>
 					</div>
+						
 					
 					
 					<div class="wrap-input100">
@@ -153,18 +164,53 @@ body {
 						<span class="focus-input100-2"></span>
 					</div>
 					
+					<a class="button" href="#popup1">
+					<div class="container-login100-form-btn m-t-20">
+					<div class="box login100-form-btn">
+					College Details
+					</div>
+					</div>
+					</a>
+					
 					<div class="container-login100-form-btn m-t-20">
 						<button class="login100-form-btn" type="submit">
 							Submit
 						</button>
 					</div>
+					
+					<div id="popup1" class="overlay">
+	<div class="popup">
+		<span class="login100-form-title p-b-33">
+						College Details
+					</span>
+		<a class="close" href="#">&times;</a>
+		<div class="wrap-input100">
+						<input class="input100" id="collg" type="text" name="college" placeholder="College Name">
+						<span class="focus-input100-1"></span>
+						<span class="focus-input100-2"></span>
+					</div>
+					<div class="wrap-input100">
+						<input class="input100" id="collg" type="text" name="college" placeholder="College City">
+						<span class="focus-input100-1"></span>
+						<span class="focus-input100-2"></span>
+					</div>
+					<div class="container-login100-form-btn m-t-20">
+						<a class="login100-form-btn" type="button" href="#">
+							Done
+						</a>
+					</div>
+	</div>
+</div>
+					
+    </div>
 				</form>
+			
 			</div>
 		</div>
 	
 	</div>
 
-	
+
 	
 <!--===============================================================================================-->
 	<script src="/jquery/jquery-3.2.1.min.js"></script>
@@ -184,13 +230,17 @@ body {
 	<script src="/main.js"></script>
 	<script src="/autocomplete.js"></script>
 	<script src="/cities.js"></script>
-	<script>
+	<script src="/modal.js"></script>
+	<script src="/app.js"></script>
+	
+<script>
 	var el = document.getElementById('course');
 	if(el)
 	{
 	autocomplete(el);
 	}
 	print_state("sts");
+
 </script>
 
 </body>
