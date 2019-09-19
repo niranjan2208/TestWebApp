@@ -77,7 +77,6 @@ body {
 }
 
 </style>
-
 </head>
 <body>
 <div class="loading-mask" style="opacity:0.8;
@@ -111,9 +110,9 @@ body {
 				
 					<div class="wrap-input100">
 					<div class="register-switch input100">
-      <input type="radio" name="sex" value="F" id="sex_f" class="register-switch-input" checked>
+      <input type="radio" name="sex" value="Female" id="sex_f" class="register-switch-input" checked>
       <label for="sex_f" class="register-switch-label">Female</label>
-      <input type="radio" name="sex" value="M" id="sex_m" class="register-switch-input">
+      <input type="radio" name="sex" value="Male" id="sex_m" class="register-switch-input">
       <label for="sex_m" class="register-switch-label">Male</label>
     </div>	
     </div>	
@@ -173,7 +172,7 @@ body {
 					</a>
 					
 					<div class="container-login100-form-btn m-t-20">
-						<button class="login100-form-btn" type="submit">
+						<button class="login100-form-btn" type="submit" id="submit">
 							Submit
 						</button>
 					</div>
@@ -183,19 +182,19 @@ body {
 		<span class="login100-form-title p-b-33">
 						College Details
 					</span>
-		<a class="close" href="#">&times;</a>
+		<a class="close" href="#" onClick="document.getElementById('collgN').value='';document.getElementById('collgC').value='';">&times;</a>
 		<div class="wrap-input100">
-						<input class="input100" id="collg" type="text" name="college" placeholder="College Name">
+						<input class="input100" id="collgN" type="text" name="collegeName" placeholder="College Name">
 						<span class="focus-input100-1"></span>
 						<span class="focus-input100-2"></span>
 					</div>
 					<div class="wrap-input100">
-						<input class="input100" id="collg" type="text" name="college" placeholder="College City">
+						<input class="input100" id="collgC" type="text" name="collegeCity" placeholder="College City">
 						<span class="focus-input100-1"></span>
 						<span class="focus-input100-2"></span>
 					</div>
 					<div class="container-login100-form-btn m-t-20">
-						<a class="login100-form-btn" type="button" href="#">
+						<a class="login100-form-btn" type="button" href="#submit">
 							Done
 						</a>
 					</div>
@@ -240,7 +239,7 @@ body {
 	autocomplete(el);
 	}
 	print_state("sts");
-
+	
 </script>
 
 </body>

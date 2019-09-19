@@ -73,10 +73,13 @@ app.post('/register',function(req,res){
   var course=req.body.course;
   var state=req.body.stt;
   var city=req.body.city;
+  var collgName=req.body.collegeName;
+  var collgCity=req.body.collegeCity;
+  var gender=req.body.sex;
 
   //start writing
 		
-        json.push({ Name: name, DateOfBirth: dob, EmailID: email_id, AddressLine1:addr1, AddressLine2:addr2, Course:course, State:state, City:city});
+        json.push({ Name: name, Gender:gender, DateOfBirth: dob, EmailID: email_id, AddressLine1:addr1, AddressLine2:addr2, Course:course, State:state, City:city, CollegeName:collgName, CollegeCity:collgCity});
         
         jsonfile.writeFileSync(file, json, {spaces:2});
               

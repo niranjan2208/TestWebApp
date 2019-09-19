@@ -1,3 +1,28 @@
 [
- 
+  {
+    "Name": "TestName",
+    "Gender": "Female",
+    "DateOfBirth": "1992-09-03",
+    "EmailID": "test@email.com",
+    "AddressLine1": "AddrLine1",
+    "AddressLine2": "AddrLine2",
+    "Course": "Statistics",
+    "State": "Goa",
+    "City": " Madgaon ",
+    "CollegeName": "IITB",
+    "CollegeCity": "Mumbai"
+  },
+  {
+    "Name": "TestName1",
+    "Gender": "Male",
+    "DateOfBirth": "1990-09-02",
+    "EmailID": "email@test.com",
+    "AddressLine1": "AddrLine1",
+    "AddressLine2": "AddrLine2",
+    "Course": "Science",
+    "State": "Himachal Pradesh",
+    "City": " Shimla ",
+    "CollegeName": "IITR",
+    "CollegeCity": "Roorkee"
+  }
 ]
