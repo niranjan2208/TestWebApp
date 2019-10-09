@@ -24,5 +24,44 @@
     "City": " Shimla ",
     "CollegeName": "IITR",
     "CollegeCity": "Roorkee"
+  },
+  {
+    "Name": "test",
+    "Gender": "Male",
+    "DateOfBirth": "1993-08-23",
+    "EmailID": "abc@xyz.com",
+    "AddressLine1": "line1",
+    "AddressLine2": "line2",
+    "Course": "Statistics",
+    "State": "Maharashtra",
+    "City": " Karad ",
+    "CollegeName": "test college",
+    "CollegeCity": "Mumbai"
+  },
+  {
+    "Name": "test1",
+    "Gender": "Female",
+    "DateOfBirth": "2019-10-08",
+    "EmailID": "test1@onenetwork.com",
+    "AddressLine1": "Bhujbal vasti, Wakad",
+    "AddressLine2": "",
+    "Course": "test1",
+    "State": "Maharashtra",
+    "City": " Pune ",
+    "CollegeName": "test1",
+    "CollegeCity": "pune"
+  },
+  {
+    "Name": "test1",
+    "Gender": "Female",
+    "DateOfBirth": "2019-10-08",
+    "EmailID": "test1@onenetwork.com",
+    "AddressLine1": "",
+    "AddressLine2": "",
+    "Course": "",
+    "State": "Maharashtra",
+    "City": " Pune ",
+    "CollegeName": "",
+    "CollegeCity": ""
   }
 ]

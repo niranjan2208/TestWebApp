@@ -6,6 +6,7 @@ var contents=fs.readFileSync('data/data.json');
 var jsoncontents=JSON.parse(contents);
 var userName=jsoncontents.username;
 var password=jsoncontents.password;
+var JSAlert = require("js-alert");
 // console.log("User Name:", userName);
 // console.log("Password:",password);
  var bodyParser     =        require("body-parser");
@@ -58,7 +59,7 @@ app.set('view engine', 'html');
   }
  else
  {
- 	res.end(false);
+ 	JSAlert.alert("Invalid Credentials. Please try again");
  }
   
 });
@@ -94,4 +95,4 @@ app.get('/registration',function (req, res) {
 		res.sendFile(__dirname+"\\views\\Registration1.html");
 	});
 
-var server = app.listen(9090);
+var server = app.listen(9090,"172.20.2.60");
