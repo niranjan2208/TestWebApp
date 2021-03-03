@@ -17,7 +17,7 @@
     "node-extjs4": "^0.1.1",
     "nodemon": "^1.19.1",
     "popups": "^1.1.3",
-    "pug": "^2.0.4"
+    "pug": "^3.0.1"
   },
   "devDependencies": {},
   "scripts": {
