@@ -11,7 +11,7 @@
     "express": "^4.17.1",
     "jquery": "^3.4.1",
     "js-alert": "^1.0.4",
-    "jsdom": "^15.1.1",
+    "jsdom": "^16.5.0",
     "jsonfile": "^5.0.0",
     "nconf": "^0.10.0",
     "node-extjs4": "^0.1.1",
